@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div class="header">header</div>
+    <div class="header">header测试啊啊啊啊啊啊啊啊</div>
     <div class="sidebar">sidebar</div>
     <div class="content">content</div>
     <div class="footer">footer</div>
