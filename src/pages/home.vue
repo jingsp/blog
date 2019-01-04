@@ -3,7 +3,7 @@
     <div class="header">header测试啊啊啊啊啊啊啊啊</div>
     <div class="sidebar">sidebar</div>
     <div class="content">content</div>
-    <div class="footer">footer</div>
+    <div class="footer">footer1111111</div>
   </div>
 </template>
 <script>
