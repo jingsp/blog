@@ -1,7 +1,7 @@
 <template>
   <div class="home-container">
     <div class="header">1111</div>
-    <div class="sidebar">sidebar</div>
+    <div class="sidebar">3333333</div>
     <div class="content">222222</div>
     <div class="footer">1111111111</div>
   </div>
