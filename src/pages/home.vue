@@ -1,6 +1,6 @@
 <template>
   <div class="home-container">
-    <div class="header">今天是1月7日</div>
+    <div class="header">今天是1月7日jiashnag1cehsihh1hhg</div>
     <div class="sidebar">sidebar</div>
     <div class="content">content</div>
     <div class="footer">footer</div>
