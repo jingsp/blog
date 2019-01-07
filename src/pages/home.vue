@@ -3,7 +3,7 @@
     <div class="header">1111</div>
     <div class="sidebar">sidebar</div>
     <div class="content">content</div>
-    <div class="footer">footer</div>
+    <div class="footer">1111111111</div>
   </div>
 </template>
 <script>
