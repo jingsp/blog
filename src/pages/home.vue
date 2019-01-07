@@ -1,9 +1,9 @@
 <template>
   <div class="home-container">
-    <div class="header">测试自动化部署</div>
+    <div class="header">今天是1月7日</div>
     <div class="sidebar">sidebar</div>
     <div class="content">content</div>
-    <div class="footer">footer1111111</div>
+    <div class="footer">footer</div>
   </div>
 </template>
 <script>
