@@ -1,0 +1,54 @@
+/* format */
+@charset "utf-8";
+html,body,div,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,form,input,button,textarea {
+	margin: 0;
+	padding: 0;
+	display: block;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	color: #636363;
+	/* // color: #17233D; */
+	font-family: "PingFangSC-Regular", "Microsoft YaHei", "Hiragino Sans GB W3", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/* // font-family: "Chinese Quote", -apple-system, system-ui, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" */
+}
+
+img {
+	border: 0;
+	display: block;
+}
+
+ul,li,ol,dl,dt,dd {list-style:none}
+
+/* h1,h2,h3,h4,h5,h6 {font-weight:normal} */
+
+input{
+	outline: none
+}
+input::placeholder {
+  color: #d2d2d2;
+	font-size: 14px;
+	font-weight: 600;
+}
+/* // 去掉ie10 type=password时的眼睛 */
+input::-ms-clear, input::-ms-reveal {
+	display: none;
+}
+/* 去掉button点击效果 */
+button{
+	outline:none;
+}
+
+/*Beyond that ellipsis*/
+.text-overflow-hidden {
+	display:block;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+/*Remove clicking shadow*/
+*{
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	-webkit-tap-highlight-color:transparent;
+}

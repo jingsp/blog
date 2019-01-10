@@ -1,9 +1,10 @@
 <template>
   <div class="home-container">
-    <div class="header">1111</div>
-    <div class="sidebar">3333333</div>
-    <div class="content">222222</div>
-    <div class="footer">1111111111</div>
+   <!-- <img src="../assets/bg.gif" width="100%" alt="">
+   <div class="btn-wrapper">
+     <button class="btn">立即领取</button>
+   </div> -->
+   jintianceshi1a1
   </div>
 </template>
 <script>
@@ -16,23 +17,24 @@ export default {
 </script>
 <style lang="scss" scoped>
 .home-container {
-  // display: grid;
-  display: grid;
-  grid-template-columns: 40px 1fr;
-  grid-template-rows: 60px 40px;
-  .header {
-    background-color: greenyellow;
-  }
-  .sidebar {
-    grid-row-start: 2;
-    grid-column-start: 2;
-    background-color: goldenrod;
-  } 
-  .content {
-    background-color: plum;
-  }
-  .footer {
-    background-color: burlywood;
+  height: 100vh;
+  width: 100%;
+  overflow: auto;
+  background-color: #a70918;
+  .btn-wrapper {
+    position: absolute;
+    top: 227px;
+    .btn {
+      width: 172px;
+      height: 40px;
+      border: 0 none;
+      border-radius: 15px;
+      outline: none;    
+      font-weight: 600;
+      font-size: 28px;
+      background-color: #015239;
+      color: #e7c69c;
+    }
   }
 }
 </style>
