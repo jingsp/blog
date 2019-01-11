@@ -1,17 +1,13 @@
 <template>
   <div class="home-container">
-   <!-- <img src="../assets/bg.gif" width="100%" alt="">
-   <div class="btn-wrapper">
-     <button class="btn">立即领取</button>
-   </div> -->
-   jintianceshi1a1
-  </div>
+   测试github提交代码
+  </div>    
 </template>
 <script>
 
 export default {
   data () {
-   return {}
+    return {}
   }
 }
 </script>
@@ -24,11 +20,13 @@ export default {
   .btn-wrapper {
     position: absolute;
     top: 227px;
-    .btn {
+    border-radius: 25px;
+    .btn {   
+      padding: 8px 30px;
       width: 172px;
       height: 40px;
       border: 0 none;
-      border-radius: 15px;
+      border-radius: 25px;
       outline: none;    
       font-weight: 600;
       font-size: 28px;
