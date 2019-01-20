@@ -1,22 +1,57 @@
 <template>
   <div class="home-container">
-    再次测试github提交代码 测试测试啊啊啊啊
+    <!-- aaaaaa -->
+    <v-touch
+        v-on:swipeleft="onSwipeLeft()"
+        v-on:swiperight="onSwipeRight()"
+        class="book-content">
+        <transition name="fade-transverse">
+          <div class="test-container">{{text}}</div>
+        </transition>
+    </v-touch>
   </div>    
 </template>
 <script>
 
 export default {
   data () {
-    return {}
+    return {
+      text: '测试啊'
+    }
+  },
+  methods: {
+    onSwipeLeft () {
+      this.text = '左滑'
+    },
+    onSwipeRight () {
+      this.text = '右滑'
+    }
   }
 }
 </script>
 <style lang="scss" scoped>
+.fade-transverse-leave-active,
+.fade-transverse-enter-active {
+  transition: all .5s;
+}
+.fade-transverse-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transverse-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
 .home-container {
   height: 100vh;
   width: 100%;
   overflow: auto;
-  background-color: #a70918;
+  // background-color: #a70918;
+  .test-container {
+    width: 200px;
+    height: 200px;
+    background-color: pink;
+  }
   .btn-wrapper {
     position: absolute;
     top: 227px;
