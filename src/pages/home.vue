@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      text: '测试啊'
+      text: '测试内容'
     }
   },
   methods: {
