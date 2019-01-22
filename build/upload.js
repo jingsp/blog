@@ -2,24 +2,24 @@ const Client = require('ssh2-sftp-client')
 const ora = require('ora')
 const path = require('path')
 const glob = require('glob')
-const fs = require('fs-extra');
+// const fs = require('fs-extra');
 const sftp = new Client()
 
 // 本地目录
 const localPath = path.join(__dirname, '../dist').replace(/\\/g, '/')
-console.log(localPath)
+// console.log(localPath)
 // 远程目录
-const remotePath = '/root/pwa-project/'
+const remotePath = '/root/pwa-project/dist/'
 // 允许上传的文件扩展名
 const allowFiles = ['html', 'css', 'js', 'png', 'jpg', 'jpeg', 'gif', 'eot', 'svg', 'ttf', 'woff']
 
 const spinner = ora('开始上传...').start()
 
-function isFolderExists() {
-  fs.ensureDir(remotePath).then(() => {
-    console.log('ssssss')
-  })
-}
+// function isFolderExists() {
+//   fs.ensureDir(remotePath).then(() => {
+//     console.log('ssssss')
+//   })
+// }
 // isFolderExists()
 
 
@@ -51,7 +51,8 @@ sftp.connect({
 }).then(() => {
   // 上传所有匹配到的文件
   console.log(333)
-  const files = glob.sync(`${localPath}/*.{${allowFiles.join(',')}}`)
+  console.log(localPath)
+  const files = glob.sync(`${localPath}/**/*.{${allowFiles.join(',')}}`)
   return Promise.all(
     files.map(localFile => {
       const remoteFile = localFile.replace(localPath, remotePath)

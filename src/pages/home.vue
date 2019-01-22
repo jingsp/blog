@@ -16,7 +16,7 @@
 export default {
   data () {
     return {
-      text: '测试内容'
+      text: '今天星期二1111111 随便改一些东西'
     }
   },
   methods: {
